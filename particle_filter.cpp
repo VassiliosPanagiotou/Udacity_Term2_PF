@@ -113,7 +113,9 @@ void ParticleFilter::dataAssociation(const std::vector<LandmarkObs>& predicted, 
 	// NOTE: Method is called during updateWeights
 	//
 
-	// Init return parameter
+	// parameter association_index
+	// carries the observation index which is associated with the i - th predicted. 
+	// Initialized with - 1, which denotes missing association
 	association_index.clear();
 	association_index.resize(predicted.size(), -1);
 
