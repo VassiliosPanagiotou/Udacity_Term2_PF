@@ -80,7 +80,7 @@ public:
 	 * @param association_index InOut Vector which carries the observation index which is associated with the i-th predicted.
 	 *							Initialized with -1, which denotes missing association
 	 */
-	void dataAssociation(std::vector<LandmarkObs> predicted, std::vector<LandmarkObs>& observations, std::vector<int>& association_index);
+	void dataAssociation(const std::vector<LandmarkObs>& predicted, const std::vector<LandmarkObs>& observations, std::vector<int>& association_index);
 	
 	/**
 	 * updateWeights Updates the weights for each particle based on the likelihood of the 
